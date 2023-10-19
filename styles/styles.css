@@ -1,0 +1,46 @@
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.375;
+}
+
+.page-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--1-header, rgba(222, 222, 222, 0.50));
+    backdrop-filter: blur(10px);
+}
+
+.btn{
+    padding:15px 40px;
+    text-decoration: none;
+}
+
+.page-header__user-btn{
+    border: 1px solid black;
+    color:black;
+}
+.page-header__user-btn:hover{
+    color:white;
+    background-color:#1F1E1E;
+}
+
+.page-header__nav-link{
+    margin: 0 25px;
+    color:black;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+}
+.page-header__nav-link:hover{
+    color:#A51505;
+}
+
+.page-footer{
+
+}
