@@ -10,22 +10,39 @@
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body class="body">
+
         <header class="page-header">
-            <a href="index.html" class="page-header__logo"><img src="pictures/logo.svg"></a>
-            <nav class="page-header__nav">
-                <a href="#" class="page-header__nav-link" id="">Мероприятия</a>
-                <a href="#" class="page-header__nav-link" id="">Блог</a>
-                <a href="#" class="page-header__nav-link" id="">О нас</a>
-                <a href="#" class="page-header__nav-link" id="">Контакты</a>
-            </nav>
-    
-            <a href="#" class="btn page-header__user-btn">Войти</a>
+            <div class="page-header__container">
+                <a href="index.html" class="page-header__logo"><img src="assets/logo.svg"></a>
+                <nav class="page-header__nav">
+                    <a href="#" class="page-header__nav-link" id="">Мероприятия</a>
+                    <a href="#" class="page-header__nav-link" id="">Блог</a>
+                    <a href="#" class="page-header__nav-link" id="">О нас</a>
+                    <a href="#" class="page-header__nav-link" id="">Контакты</a>
+                </nav>
+                <a href="#" class="btn page-header__user-btn">Войти</a>
+            </div>
         </header>
     
         <main class="main">
             <div class="home">
-                <header class="main-header home__main-header"></header>
-                <section class="offers home__offers"></section>
+
+                <header class="main-header home__main-header">
+                    <h1 class="main-header__title">Арт - пространство</h1>
+                    <div class="main-header__picture">
+                        <img class="main-header__img" src="assets/LENNI.svg">
+                    </div>
+                    <p class="main-header__text">для людей, горящих сердцем и делом место для настоящего</p>
+                </header>
+
+                <section class="offers home__offers">
+                    <h2 class="offers__text">Я хочу:</h2>
+                    <div class="offers__buttons">
+                        <a href="#" class="btn offers__event-btn">Провести мероприятие</a>
+                        <a href="#" class="btn offers__tenant-btn">Стать арендатором</a>
+                    </div>
+                </section>
+                
                 <section class="about home__about"></section>
                 <section class="upcoming home__upcoming"></section>
                 <section class="listing home__listing"></section>
