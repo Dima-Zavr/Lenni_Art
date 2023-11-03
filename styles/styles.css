@@ -2,13 +2,22 @@
     margin: 0px;
     padding:0px;
 }
-body{
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.375;
-    height: 2000px;
+html, body{
+    width:100%;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+}
+.home{
+    padding-top: 243px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 /*//////////////////////////////////*/
@@ -19,13 +28,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    position:sticky;
+    position:fixed;
+    z-index: 1;
     top:0;
     left:0;
     width: 100%;
+    height:143px;
     background:rgba(222, 222, 222, 0.50);
 }
-
 .page-header::before{
     content: "";
     position:absolute;
@@ -43,7 +53,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding:0 40px;
-    max-width: 1414px;
+    max-width: 1334px;
     width: 100%;
 }
 
@@ -54,6 +64,12 @@ body{
     display: inline-block;
 }
 
+.page-header__btn{
+    width:202px;
+    display: flex;
+    justify-content: end;
+}
+
 .page-header__user-btn{
     box-sizing: border-box;
     background-color: transparent;
@@ -61,7 +77,6 @@ body{
     color:#1f1e1e;
     font-size: 16px;
     font-weight: 600;
-
 }
 .page-header__user-btn:hover{
     color:white;
@@ -80,9 +95,6 @@ body{
     color:#A51505;
 }
 
-.home{
-    padding-top: 100px;
-}
 
 /*//////////////////////////////////*/
 /*////////////MAIN HEADER///////////*/
@@ -95,7 +107,7 @@ body{
 .main-header__title,
 .main-header__text{
     text-align: center;
-    font-family: Lora;
+    font-family: 'Lora';
     font-size: 45px;
     font-style: normal;
     font-weight: 400;
@@ -136,7 +148,7 @@ body{
 .offers__text{
     color:#1F1E1E;
     text-align: center;
-    font-family: Lora;
+    font-family: 'Lora';
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -175,3 +187,132 @@ body{
     color:#ffffff;
     background-color: #1F1E1E;
 }
+
+
+/*/////////////////////////////*/
+/*////////////ABOUT////////////*/
+/*/////////////////////////////*/
+
+.about{
+    width: 1334px;
+    margin-top:200px;
+    position: relative;
+    padding-bottom: 91px;
+}
+
+.section__title{
+    margin: 0 auto 150px auto;
+    width: 533px;
+    padding: 8px 45px;
+    background-color: #1F1E1E;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Lora';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.about__title{
+    color:#1F1E1E;
+    font-family: 'Open Sans';
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 50px;
+}
+
+.about__title2{
+    width: 868px;
+    text-wrap: wrap;
+}
+
+.about__text{
+    width: 867px;
+    flex-wrap: wrap;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    float: right;
+}
+
+.about__text3{
+    width: 344px;
+}
+
+.about__img1{
+    width: 870px;
+    height: 577px;
+    padding: 100px 0;
+}
+.about__pic2{
+    width: 569.326px;
+    height: 535.971px;
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    top:785px;
+    right: -64px;
+    float:right;
+}
+.about__img2{
+    height:100%;
+    width:auto;
+}
+
+.about__rectangle{
+    width: 930px;
+    height: 246px;
+    margin-top: 110px;
+    background:#BC3324;
+    position: relative;
+    float: left;
+}
+.about__img3{
+    width: 872.402px;
+    height: 361.609px;
+    position: absolute;
+    top:18.48px;
+    left: 48.86px;
+}
+
+.about__text3{
+    padding-top: 265px;
+}
+
+.about__btn{
+    float:right;
+    padding-top:89px;
+}
+.about__btn:hover{
+
+    color:#A51505;
+}
+
+
+/*/////////////////////////////*/
+/*///////////EVENTS////////////*/
+/*/////////////////////////////*/
+
+.home__events{
+    background-color: #ffffff;
+    padding-top: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listing__events-list{
+    max-width: 1414px;
+}
+
+.events__slider{
+    margin-top: 70px;
+}
+
