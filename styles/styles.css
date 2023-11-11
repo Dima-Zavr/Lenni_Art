@@ -328,3 +328,124 @@ html, body{
     float: right;
     margin-bottom: 148px;
 }
+
+
+/*//////////////////////////////////*/
+/*////////////PAGE FOOTER///////////*/
+/*//////////////////////////////////*/
+
+.page-footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.page-footer__container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0 40px;
+    max-width: 1334px;
+    width: 100%;
+}
+
+.page-footer__inf{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inf__list{
+    display: flex;
+}
+
+.inf__list ul li{
+    list-style: none;
+    margin-bottom: 22px;
+}
+
+.inf__mailing{
+    display: flex;
+    flex-direction: column;
+}
+
+.mailing__p{
+    margin-bottom: 24px;
+}
+
+.inf__inputbtn{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.inf__input{
+    width: 275px;
+    padding: 15px 28px;
+    border:none;
+}
+.inf__input:focus{
+    outline: none;
+}
+
+.inf__btn{
+    display: inline-flex;
+    padding: 15px 23px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F1E1E;
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.inf__checkbox{
+    display: flex;
+}
+
+.inf__checkbox input{
+    margin-right: 15px;
+}
+
+.page-footer__p{
+    color:#1F1E1E;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.page-footer__social_network{
+    display: flex;
+    justify-content: center;
+}
+
+.page-footer__links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.links__left{
+    display: flex;
+    flex-direction: column;
+}
+
+.links__p{
+    margin-bottom: 14px;
+}
+
+.links__link1{
+    margin-right: 60px;
+}
+
+.links__right{
+    display: flex;
+    align-items: end;
+}
+
+.links__link2{
+    margin-right: 15px;
+}
