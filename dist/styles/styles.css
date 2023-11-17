@@ -17,7 +17,6 @@
 html,
 body {
   width: 100%;
-  overflow: scroll;
 }
 body {
   -webkit-box-sizing: border-box;
@@ -423,6 +422,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  padding: 0 40px;
   margin-bottom: 75px;
 }
 .page-footer__container {
@@ -436,7 +436,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 40px;
   max-width: 1414px;
   width: 100%;
 }
