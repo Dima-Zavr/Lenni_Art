@@ -2,14 +2,15 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom:75px;
 }
 
 .page-footer__container{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    padding:0 40px;
-    max-width: 1334px;
+    margin:0 40px;
+    max-width: 1414px;
     width: 100%;
 }
 
@@ -55,9 +56,9 @@
     padding: 15px 23px;
     justify-content: center;
     align-items: center;
-    background-color: #1F1E1E;
-    color: #FFF;
-    font-family: 'Open Sans';
+    background-color: @black;
+    color: @white;
+    font-family: @font1;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -67,14 +68,17 @@
 .inf__checkbox{
     display: flex;
 }
+.inf__checkbox:hover{
+    cursor: pointer;
+}
 
 .inf__checkbox input{
     margin-right: 15px;
 }
 
 .page-footer__p{
-    color:#1F1E1E;
-    font-family: 'Open Sans';
+    color:@black;
+    font-family: @font1;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -84,6 +88,8 @@
 .page-footer__social_network{
     display: flex;
     justify-content: center;
+    position: relative;
+    top:57.6px;
 }
 
 .page-footer__links{
