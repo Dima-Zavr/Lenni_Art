@@ -554,9 +554,19 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+.inf__rec {
+  width: 4px;
+  height: 198px;
+  background-color: #bc3324;
+  margin-right: 22px;
+}
 .inf__list ul li {
   list-style: none;
   margin-bottom: 22px;
+}
+.inf__list ul li:hover {
+  color: #a51505;
+  cursor: pointer;
 }
 .inf__mailing {
   display: -webkit-box;
@@ -602,6 +612,9 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.inf__btn:hover {
+  background-color: #a51505;
 }
 .inf__checkbox {
   display: -webkit-box;
