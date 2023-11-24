@@ -1,84 +1,74 @@
 .about{
-    max-width: 1334px;
-    margin: 100px 0;
     position: relative;
-    padding: 0 40px 0 40px;
-}
-
-.about__title{
-    color:@black;
-    font-family: @font1;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding-bottom: 50px;
-}
-
-.about__title2{
-    width: 868px;
-    text-wrap: wrap;
-}
-
-.about__text{
-    width: 867px;
-    flex-wrap: wrap;
-    font-family: @font1;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    float: right;
-}
-
-.about__text3{
-    width: 344px;
-}
-
-.about__img1{
-    width: 870px;
-    height: 577px;
-    padding: 100px 0;
-}
-.about__pic2{
-    width: 404px;
-    height: 493px;
-    display: flex;
-    justify-content: center;
-    position:absolute;
-    top:785px;
-    right: 40px;
-    float:right;
-}
-.about__img2{
-    height:100%;
-    width:auto;
-}
-
-.about__rectangle{
-    width: 930px;
-    height: 246px;
-    margin-top: 110px;
-    background:@red;
-    position: relative;
-    float: left;
-}
-.about__img3{
-    width: 872.402px;
-    height: 361.609px;
-    position: absolute;
-    top:18.48px;
-    left: 48.86px;
-}
-
-.about__text3{
-    padding-top: 265px;
-}
-
-.about__btn{
-    float:right;
-    padding-top:89px;
-}
-.about__btn:hover{
-    color:@red_dark;
+    &__title{
+        color:@black;
+        font-family: @font1;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-bottom: 50px;
+    }
+    &__title2{
+        width: 868px;
+        text-wrap: wrap;
+    }
+    &__text{
+        width: 867px;
+        flex-wrap: wrap;
+        font-family: @font1;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        float: right;
+    }
+    &__text3{
+        width: 344px;
+    }
+    &__img1{
+        width: 870px;
+        height: 577px;
+        padding: 100px 0;
+    }
+    &__pic2{
+        width: 404px;
+        height: 493px;
+        display: flex;
+        justify-content: center;
+        position:absolute;
+        top:785px;
+        right: 40px;
+        float:right;
+    }
+    &__img2{
+        height:100%;
+        width:auto;
+    }
+    &__rectangle{
+        width: 930px;
+        height: 246px;
+        margin-top: 110px;
+        background:@red;
+        position: relative;
+        float: left;
+    }
+    &__img3{
+        width: 872.402px;
+        height: 361.609px;
+        position: absolute;
+        top:18.48px;
+        left: 48.86px;
+    }
+    &__text3{
+        padding-top: 265px;
+    }
+    &__btn{
+        float:right;
+        padding-top:89px;
+        &:hover{
+            color:@red_dark;
+        }
+    }
+    .container();
 }
