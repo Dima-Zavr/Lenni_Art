@@ -1,4 +1,6 @@
-.event__title{
+.event{
+
+  &__title{
     color:@black;
     text-align: center;
     font-family: @font2;
@@ -7,29 +9,26 @@
     font-weight: 500;
     line-height: normal;
   }
-
-  .event__header{
+  &__header{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 80px;
     padding-bottom: 80px;
+    &-left,
+    &-right{
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      margin: 60px;
+    }
+    &-left{
+      text-align: end;
+    }
+  
   }
-
-  .event__header-left,
-  .event__header-right{
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    margin: 60px;
-  }
-
-  .event__header-left{
-    text-align: end;
-  }
-
-  .event__date{
+  &__date{
     color:@black;
     font-family: @font3;
     font-size: 30px;
@@ -37,13 +36,11 @@
     font-weight: 300;
     line-height: normal;
     text-transform: uppercase;
+    &-word{
+      font-size: 16px;
+    }
   }
-
-  .event__date-word{
-    font-size: 16px;
-  }
-
-  .event__place{
+  &__place{
     color:@black;
     font-family: @font3;
     font-size: 16px;
@@ -52,3 +49,4 @@
     line-height: normal;
     text-transform: uppercase;
   }
+}

@@ -1,0 +1,30 @@
+.main-header{
+    min-width: 100%;
+    margin: 100px 0;
+    &__title,
+    &__text{
+        text-align: center;
+        font-family: @font2;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 70px;
+    }
+    &__picture{
+        width: 100%;
+        margin-bottom: 70px;
+        &::before{
+            content: "";
+            padding-top: 16.927%;
+        }
+    }
+    &__img{
+        width:100%;
+        object-fit: contain;
+    }
+    &__text{
+        width: 990px;
+        margin: 0 auto;
+    }
+}

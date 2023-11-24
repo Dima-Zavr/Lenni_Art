@@ -1,7 +1,8 @@
 <section class="events main__events">
     <h2 class="section__title">Мероприятия</h2>
-    <div class="listing__events-list">
-        @@loop('event-card.html', [
+    <div class="events__listing">
+
+        @@loop('../event-card.html', [
         {
           "class": "listing__event-card",
           "img": "assets/images/events/Nirvana.jpg",
@@ -30,6 +31,7 @@
           "datetime": "2022-12-07T18:00"
         }
         ])
+
     </div>
     <svg class="events__slider" width="527" height="62">
         <use xlink:href="assets/icons/symbols.svg#slider"></use>
