@@ -1,40 +1,46 @@
 <section class="events main__events">
-    <h2 class="section__title">Мероприятия</h2>
-    <div class="events__listing">
+  <h2 class="section__title">Мероприятия</h2>
+  <div class="events__listing">
 
-        @@loop('../event-card.html', [
-        {
-          "class": "listing__event-card",
-          "img": "assets/images/events/Nirvana.jpg",
-          "alt": "Nirvana",
-          "title": "Собираемся и слушаем альбом Nirvana",
-          "descr": "Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.",
-          "time": "07.12.2022 | начало 18.00",
-          "datetime": "2022-12-07T18:00"
-        },
-        {
-          "class": "listing__event-card",
-          "img": "assets/images/events/Stuff.jpg",
-          "alt": "Stuff",
-          "title": "Есть тема, нужно обсудить с HowStuffWorks",
-          "descr": "Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.",
-          "time": "14.12.2022 | начало 18.30",
-          "datetime": "2022-12-14T18:30"
-        },
-        {
-          "class": "listing__event-card",
-          "img": "assets/images/events/Sade.jpg",
-          "alt": "Sade",
-          "title": "Вечер | The Best of Sade",
-          "descr": "Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.",
-          "time": "16.12.2022 | начало 20.00",
-          "datetime": "2022-12-07T18:00"
-        }
-        ])
+    @@loop('../event-card.html', [
+    {
+      "class": "listing__event-card",
+      "link": "event.html",
+      "img": "assets/images/events/Nirvana.jpg",
+      "alt": "Nirvana",
+      "title": "Собираемся и слушаем альбом Nirvana",
+      "descr": "Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.",
+      "time": "07.12.2022 | начало 18.00",
+      "datetime": "2022-12-07T18:00"
+    },
+    {
+      "class": "listing__event-card",
+      "link": "event.html",
+      "img": "assets/images/events/Stuff.jpg",
+      "alt": "Stuff",
+      "title": "Есть тема, нужно обсудить с HowStuffWorks",
+      "descr": "Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.",
+      "time": "14.12.2022 | начало 18.30",
+      "datetime": "2022-12-14T18:30"
+    },
+    {
+      "class": "listing__event-card",
+      "link": "event.html",
+      "img": "assets/images/events/Sade.jpg",
+      "alt": "Sade",
+      "title": "Вечер | The Best of Sade",
+      "descr": "Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.",
+      "time": "16.12.2022 | начало 20.00",
+      "datetime": "2022-12-07T18:00"
+    }
+    ])
 
-    </div>
-    <svg class="events__slider" width="527" height="62">
-        <use xlink:href="assets/icons/symbols.svg#slider"></use>
-    </svg>
-    <a href="events.html" class="events__btn">Смотреть все</a>
+  </div>
+
+  <svg class="events__slider" width="527" height="62">
+    <use xlink:href="assets/icons/symbols.svg#slider"></use>
+  </svg>
+
+  <a href="events.html" class="events__btn">Смотреть все</a>
+  
 </section>
