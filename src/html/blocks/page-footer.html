@@ -11,17 +11,20 @@
                     <li>Контакты</li>
                 </ul>
             </div>
-            <div class="inf__mailing">
-                <p class="page-footer__p mailing__p">Подпишись и будь в курсе происходящего</p>
-                <div class="inf__inputbtn">
-                    <input type="email" class="inf__input" placeholder="Email">
-                    <button class="inf__btn">Подписаться</button>
-                </div>
-                <label class="inf__checkbox" for="agree">
-                    <input type="checkbox" id="agree">
-                    <p class="page-footer__p">Согласен на обработку персональных данных</p>
+            <form class="inf__mailing">
+                <label for="agree">
+                    <p class="page-footer__p mailing__p">Подпишись и будь в курсе происходящего</p>
+                    <div class="inf__inputbtn">
+                        <input type="email" class="inf__input" placeholder="Email" required>
+                        <button class="inf__btn">Подписаться</button>
+                    </div>
+                    <div class="check" for="agree">
+                        <input type="checkbox" id="agree" class="check__input" required checked/>
+                        <span class="check__mark"></span>
+                        <p class="page-footer__p">Согласен на обработку персональных данных</p>
+                    </div>
                 </label>
-            </div>
+            </form>
         </div>
 
         <div class="page-footer__social_network">
