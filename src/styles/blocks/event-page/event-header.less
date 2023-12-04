@@ -1,5 +1,4 @@
 .event{
-
   &__title{
     color:@black;
     text-align: center;
@@ -24,9 +23,20 @@
       margin: 60px;
     }
     &-left{
-      text-align: end;
+      text-align: right;
     }
-  
+  }
+  &__line-left{
+    width: 139px;
+    height: 1px;
+    margin: 12px 0 12px auto;
+    background: linear-gradient(270deg, #1C1B1B 0%, rgba(255, 255, 255, 0.00) 82.86%);
+  }
+  &__line-right{
+    width: 139px;
+    height: 1px;
+    margin: 12px 0;
+    background: linear-gradient(90deg, #1C1B1B 0%, rgba(255, 255, 255, 0.00) 82.86%);
   }
   &__date{
     color:@black;
