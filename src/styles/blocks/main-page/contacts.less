@@ -1,3 +1,39 @@
 .contacts{
     .container();
+    &__block{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__inf{
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0;
+    }
+    &__el{
+        display: flex;
+        margin-bottom: 67px;
+        &-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 54px;
+            &1{
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+            & > p{
+                margin-top: 5px;
+            }
+        }
+    }
+    &__svg{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: 110px;
+        background-color: @black;
+    }
 }

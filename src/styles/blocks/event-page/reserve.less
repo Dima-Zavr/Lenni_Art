@@ -27,12 +27,14 @@
     background-color: @black;
     color: @white;
     margin:0 auto;
-    width: 162px;
+    padding: 6px 56px;
     text-align: center;
+    margin-bottom: 40px;
   }
   &__scheme {
     grid-area: scheme;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     &-wrapper {
       position: relative;
@@ -41,16 +43,16 @@
         content: "";
         display: block;
         width: 100%;
-        //padding-top: 51.15384%;
+        padding-top: 51.15384%;
       }
     }
-    &__scene {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
+  }
+  &__scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
   &__order {
     grid-area: order;
