@@ -9,6 +9,18 @@
 
         <main class="main">
 
+            <div  class="breadcrumb">
+                @@loop('./blocks/breadcrumb.html', [
+                {
+                    "link": "./index.html",
+                    "name": "Главная",
+                },
+                {
+                    "link": "./events.html",
+                    "name": "Мероприятия",
+                },
+                ])
+            </div>
             @@include('blocks/events-page/events-events.html')
             @@include('blocks/events-page/additional-services.html')
             @@include('blocks/offers.html')

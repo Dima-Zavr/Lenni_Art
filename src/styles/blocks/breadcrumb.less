@@ -1,0 +1,18 @@
+.breadcrumb{
+    .container();
+    margin: 40px 0 38px 0;
+    display: flex;
+    &__el{
+        margin: 0 3px;
+        &::after{
+            content: "/";
+            margin-left: 3px;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        &:hover{
+            color: @red_dark;
+        }
+    }
+}
