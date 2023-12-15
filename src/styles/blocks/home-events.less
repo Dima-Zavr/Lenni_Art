@@ -1,7 +1,25 @@
 .main__events{
     background-color: @white;
-    
     padding: 100px 0;
+    position:relative;
+    &::before,
+    &::after{
+        content: "";
+        width: 0; 
+        height: 0;
+        position: absolute;
+        left: 0;
+    }
+    &::before{
+        border-bottom: 2vw solid @white;
+        border-right: 40vw solid transparent;
+        top:-1.9vw;
+    }
+    &::after{
+        border-top: 2vw solid @white;
+        border-right: 63vw solid transparent;
+        bottom:-1.9vw;
+    }
 }
 .events__events{
     padding-top: 100px;

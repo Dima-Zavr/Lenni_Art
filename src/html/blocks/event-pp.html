@@ -12,7 +12,7 @@
             <form class="pp__form form">
 
                 <div class="first__stroke">
-                    <label class="field">
+                    <div class="field">
                         <span class="field__title">Формат мероприятия:</span>
                         <div class="radio">
                             <label class="radio__item">
@@ -39,10 +39,10 @@
                                 <span class="radio__label">Другое</span>
                             </label>
                         </div>
-                    </label>
+                    </div>
                     
                     <div>
-                        <label class="field">
+                        <div class="field">
                             <span class="field__title">Планируемое количество посетителей:</span>
                             <select class="field__select" name="amount">
                                 <option value="20">до 20 человек</option>
@@ -50,21 +50,21 @@
                                 <option value="500">от 100 до 500 человек</option>
                                 <option value="1000">более 500 человек</option>
                             </select>
-                        </label>
+                        </div>
                         <br>
-                        <label class="field">
+                        <div class="field">
                             <span class="field__title">Дата проведения:</span>
                             <div style="display: flex;">
                                 <input class="field__input field__input-date" type="text" maxlength="2" minlength="2" placeholder="ДД" name="day" required>
                                 <input class="field__input field__input-date" type="text" maxlength="2" minlength="2" placeholder="ММ" name="month" required>
                                 <input class="field__input field__input-year" type="text" maxlength="4" minlength="4" placeholder="ГГГГ" name="year" required>
                             </div>
-                        </label>
+                        </div>
                         
                     </div>
                 </div>
 
-                <label class="field">
+                <div class="field">
                     <span class="field__title">Контактные данные:</span>
                     <div class="contact-data">
                         <div class="contact-data__el">
@@ -84,7 +84,7 @@
                             <input class="field__input" type="email" placeholder="Email" name="email" required>
                         </div>
                     </div>
-                </label>
+                </div>
 
                 <br><br>
                 <label class="field">
