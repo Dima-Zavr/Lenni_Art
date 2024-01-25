@@ -1,10 +1,15 @@
 .offers{
     max-width: 1334px;
-    margin: 0 0 100px 0;
-    padding: 0 40px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media @bw1020{
+        margin-bottom: 65px;
+    }
+    @media @bw768{
+        margin-bottom: 50px;
+    }
     &__text{
         color:@black;
         text-align: center;
@@ -15,12 +20,28 @@
         line-height: 30px; /* 136.364% */
         letter-spacing: 0.44px;
         text-transform: uppercase;
+
+        @media @bw1020{
+            font-size: 16px;
+            font-weight: 500;
+        }
     }
     &__buttons{
         display: flex;
         justify-content: space-between;
         margin-top: 46px;
-        width: 624px;
+        max-width:624px;
+        @media @bw1660{
+            width: 604px;
+        }
+        @media @bw1020{
+            width: 566px;
+        }
+        @media @bw768{
+            width:100%;
+            justify-content: center;
+            flex-direction: column;
+        }
     }
     &__event-btn{
         color:@white;
@@ -28,6 +49,11 @@
         width: 192px;
         text-align: center;
         border: none;
+        @media @bw768{
+            box-sizing: border-box;
+            width:100%;
+            margin-bottom: 25px;
+        }
         &:hover{
             background-color: @red_dark;
             border: none;
@@ -38,6 +64,10 @@
         background-color: transparent;
         width: 192px;
         text-align: center;
+        @media @bw768{
+            box-sizing: border-box;
+            width:100%;
+        }
         &:hover{
             color:@white;
             background-color: @black

@@ -7,14 +7,14 @@
     top:0;
     left:0;
     width: 100%;
-    max-height:143px;
+    max-height:147px;
+    background:rgba(222, 222, 222, 0.50);
     @media @bw1660 {
         height: 111px;
     }
     @media @bw768 {
         height: 70px;
     }
-    background:rgba(222, 222, 222, 0.50);
     &::before{
         content: "";
         position:absolute;
@@ -31,7 +31,7 @@
         align-items: center;
         justify-content: space-between;
     }
-    &__logo-icon{
+    &__logo, &__logo-icon{
         width: 202px;
         height: 147px;
         @media @bw1660 {
@@ -52,6 +52,7 @@
         }
         @media @bw1020 {
             width: auto;
+            margin-left: auto;
         }
     }
     &__user-btn{
@@ -82,8 +83,8 @@
     &__user-icon {
         display: none;
         @media @bw1020 {
-          display: block;
-          margin: auto;
+            display: block;
+            margin: auto;
         }
     }
     &__nav{
@@ -132,48 +133,46 @@
     }
     &__nav-toggle {
         display: none;
-                
         @media @bw1020 {
-          display: block;
-          position: relative;
-          right: -11px;
-          margin-left: 18px;
-          width: 40px;
-          height: 40px;
-          border: none;
-          background: none;
+            display: block;
+            position: relative;
+            right: -11px;
+            margin-left: 18px;
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: none;
         }
         @media @bw768 {
             margin-left: 5px;
         }
         &::before,
         &::after {
-          content: "";
-          display: block;
-          position: absolute;
-          top: 19px;
-          left: 11px;
-          width: 18px;
-          height: 2px;
-          border-radius: 2px;
-          background-color: @black;
-          transform-origin: 50% 50%;
+            content: "";
+            display: block;
+            position: absolute;
+            top: 19px;
+            left: 11px;
+            width: 18px;
+            height: 2px;
+            border-radius: 2px;
+            background-color: @black;
+            transform-origin: 50% 50%;
         }
         &::before {
-          top: 13px;
-          box-shadow: 0 6px 0 @black;
+            top: 13px;
+            box-shadow: 0 6px 0 @black;
         }
         &::after {
-          top: 25px;
+            top: 25px;
         }
     }
     &__nav-user {
         display: none;
-
         @media @bw1020 {
-          display: flex;
-          align-items: center;
-          margin-top: 20px;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
         }
     }
     &__nav-user-link {
