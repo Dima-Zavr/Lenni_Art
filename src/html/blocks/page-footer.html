@@ -15,7 +15,7 @@
                 </ul>
             </div>
             <form class="inf__mailing">
-                <p class="page-footer__p mailing__p">Подпишись и будь в курсе происходящего</p>
+                <p class="mailing__p">Подпишись и будь в курсе происходящего</p>
                 <div class="inf__inputbtn">
                     <input type="email"  class="inf__input" placeholder="Email" required>
                     <button class="inf__btn" >Подписаться</button>
@@ -23,24 +23,32 @@
                 <label class="check">
                     <input type="checkbox" class="check__input" required checked>
                     <span class="check__mark"></span>
-                    Согласен на обработку персональных данных
+                    <p class="inf__check-text">Согласен на обработку персональных данных</p>
                 </label>
             </form>
         </div>
 
-        <div class="page-footer__social_network">
-            <svg width="160" height="58">
-                <use xlink:href="assets/icons/symbols.svg#social_network"></use>
-            </svg>
+        <div class="page-footer__soc_net">
+            <div class="page-footer__soc_net-circle">
+                <svg width="24" height="24">
+                    <use xlink:href="assets/icons/symbols.svg#insta"></use>
+                </svg>
+            </div>
+            <div class="page-footer__soc_net-circle">
+                <svg width="24" height="24">
+                    <use xlink:href="assets/icons/symbols.svg#vk"></use>
+                </svg>
+            </div>
         </div>
+
+        
+        
+        <p class="page-footer__p links__p">© Millennials 2022</p>
 
         <div class="page-footer__links">
             <div class="links__left">
-                <p class="page-footer__p links__p">© Millennials 2022</p>
-                <div>
-                    <a href="#" class="page-footer__p links__link1">Политика конфиденциальности</a>
-                    <a href="#" class="page-footer__p">Cookies</a>
-                </div>
+                <a href="#" class="page-footer__p links__link1">Политика конфиденциальности</a>
+                <a href="#" class="page-footer__p">Cookies</a>
             </div>
             <div class="links__right">
                 <p class="page-footer__p links__link2">Создание и продвижение</p>
@@ -49,5 +57,6 @@
                 </svg>
             </div>
         </div>
+        
     </div>
 </footer>
