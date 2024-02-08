@@ -17,17 +17,22 @@
         display: flex;
         justify-content: center;
         margin-bottom: 60px;
+        gap:100px;
+        @media @bw1020{
+            gap:52px;
+        }
+        @media @bw768{
+            gap:20px;
+        }
     }
     &__line1{
         width: 618px;
         height: 2px;
-        margin-right: 50px;
         background:  linear-gradient(270deg, #1C1B1B 0%, rgba(255, 255, 255, 0.00) 65%);
     }
     &__line2{
         width: 618px;
         height: 2px;
-        margin-left: 50px;
         background: linear-gradient(90deg, #1C1B1B 0%, rgba(255, 255, 255, 0.00) 65%);
     }
     &__inf{
@@ -164,15 +169,15 @@
         }
     }
     &__p{
-        color:@black;
-        font-family: @font1;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        text-decoration: none;
-        @media @bw1020{
-            font-size: 14px;
+        display: inline-block;
+        margin-bottom: 14px;
+        font-size: 14px;
+        font-weight: 400;
+        @media @bw768{
+            position: absolute;
+            margin: 0;
+            right:20px;
+            bottom: 27px;
         }
     }
     &__links{
@@ -185,40 +190,44 @@
         .links{
             &__left{
                 display: flex;
+                gap:60px;
                 @media @bw650{
                     flex-direction: column;
                 }
             }
-            &__link1{
-                margin-right: 60px;
-                @media @bw1020{
-                    margin: 0 15px 20px 0;
-                }
-            }
             &__right{
                 display: flex;
-                align-items: center;
+                align-items: end;
+                gap:15px;
                 @media @bw768{
                     justify-content: end;
                     align-items: end;
                     margin-top: 41.5px;
                 }
             }
-            &__link2{
-                margin-right: 15px;
-            }
         }
     }
     .links__p{
-        margin-bottom: 14px;
-        font-size: 14px;
-        font-weight: 400;
-        @media @bw768{
-            position: absolute;
-            margin: 0;
-            right:20px;
-            bottom: 27px;
+        color:@black;
+        font-family: @font1;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-decoration: none;
+        @media @bw1020{
+            font-size: 14px;
         }
+        &:hover{
+            color:@red;
+            cursor: pointer;
+        }
+    }
+    &__text{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        text-align: right;
     }
 }
 .check{

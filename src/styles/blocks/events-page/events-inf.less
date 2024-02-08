@@ -2,11 +2,26 @@
     .container();
     margin: 0 0 150px 0;
     display: flex;
-    justify-content:space-between;
+    justify-content: center;
+    gap:67px;
+    flex-wrap: wrap;
     &__el{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width:400px;
+        @media @bw1020{
+            width:280px;
+        }
+    }
+    @media @bw1660{
+        gap:30px;
+    }
+    @media @bw1020{
+        gap:50px 100px;
+    }
+    @media @bw1020{
+        gap:40px;
     }
 }
 .el{
@@ -25,7 +40,6 @@
         margin-bottom: 10px;
     }
     &__text{
-        width:400px;
         text-align: center;
     }
 }
