@@ -3,6 +3,9 @@
   display: flex;
   width: 100%;
   position: relative;
+  @media @bw1020{
+    flex-direction: column;
+  }
   &:hover {
     .article-card__picture {
       box-shadow: 0 0 30px fade(@black, 55%);
@@ -24,6 +27,9 @@
         }
       }
     }
+    @media @bw1020{
+      width: 100%;
+    }
   }
   &__picture {
     display: block;
@@ -36,6 +42,8 @@
       display: block;
       width: 100%;
       padding-top: 62.3126%;
+    }
+    @media @bw1020{
     }
   }
   &__img {
@@ -52,11 +60,12 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
     padding: 30px 0;
     padding-right: 150px;
+    @media @bw768{
+      padding: 20px 0 60px 0;
+
+    }
   }
   &__time {
     margin: 0 0 40px;
@@ -66,7 +75,9 @@
   }
   &__title-link,
   &__description {
-    max-width: 470px;
+    @media @bw1020{
+      width:100%;
+    }
   }
   &__title-link {
     margin: auto 0 40px;
@@ -84,11 +95,23 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 33px;
+    @media @bw1020{
+      font-size: 20px;
+      line-height: 27px;
+    }
+    @media @bw768{
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
   &__description {
     margin: 0;
     font-size: 16px;
     line-height: 22px;
+    @media @bw768{
+      font-size: 14px;
+      line-height: 19px;
+    }
   }
   &__arrow {
     position: absolute;
@@ -96,6 +119,17 @@
     bottom: 30px;
     color: inherit;
     transition: none;
+    @media @bw768{
+      bottom: -20px;
+    }
+    .arrow__icon{
+      width:92px;
+      height:62px;
+      @media @bw1020{
+        width:67px;
+        height:40px;
+      }
+    }
   }
   & + .article-card {
     margin-top: 120px;
