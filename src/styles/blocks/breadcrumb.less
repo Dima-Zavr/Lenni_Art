@@ -1,12 +1,18 @@
 .breadcrumb{
     .container();
-    margin: 40px 0 38px 0;
+    margin: 40px 0;
     display: flex;
+    @media @bw1340 {
+        margin: 40px 0;
+    }
+    @media @bw768 {
+        display: none;
+    }
     &__el{
         margin: 0 3px;
-        &::after{
+        &::before{
             content: "/";
-            margin-left: 3px;
+            margin-right: 3px;
         }
     }
     &__link{

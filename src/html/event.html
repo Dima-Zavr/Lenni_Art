@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-
     @@include('blocks/head.html')
-
     <body class="body">
-
         @@include('blocks/page-header.html')
-
         <main class="main">
             <div  class="breadcrumb">
+                <a class="breadcrumb__link" href="./index.html">Главная</a>
+                <!-- prettier-ignore -->
                 @@loop('./blocks/breadcrumb.html', [
-                {
-                    "link": "./index.html",
-                    "name": "Главная",
-                },
                 {
                     "link": "./events.html",
                     "name": "Мероприятия",
@@ -24,16 +18,10 @@
                 }
                 ])
             </div>
-
-            
             @@include('blocks/event-page/event-header.html')
             @@include('blocks/event-page/event-inf.html')
             @@include('blocks/event-page/reserve.html')
-
         </main>
-
         @@include('blocks/page-footer.html')
-
     </body>
-    
 </html>

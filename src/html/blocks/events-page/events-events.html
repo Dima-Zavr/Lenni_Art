@@ -1,6 +1,7 @@
 <section class="events events__events">
   <h2 class="section__title">Мероприятия</h2>
   <div class="events__listing">
+    <!-- prettier-ignore -->
     @@loop('../event-card.html', [
     {
       "class": "listing__event-card",
@@ -63,9 +64,8 @@
       "datetime": "2022-12-27T10:00"
     }
     ])
-
   </div>
   <svg class="events__show-more" width="128" height="133">
-      <use xlink:href="assets/icons/symbols.svg#show_more"></use>
+    <use xlink:href="assets/icons/symbols.svg#show_more"></use>
   </svg>
 </section>

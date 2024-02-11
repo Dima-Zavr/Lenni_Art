@@ -17,10 +17,9 @@
         font-size: 22px;
         font-style: normal;
         font-weight: 400;
-        line-height: 30px; /* 136.364% */
+        line-height: 30px;
         letter-spacing: 0.44px;
         text-transform: uppercase;
-
         @media @bw1020{
             font-size: 16px;
             font-weight: 500;
@@ -40,7 +39,8 @@
         @media @bw768{
             width:100%;
             justify-content: center;
-            flex-direction: column;
+            flex-direction: column-reverse;
+            gap:25px;
         }
     }
     &__event-btn{
@@ -52,7 +52,6 @@
         @media @bw768{
             box-sizing: border-box;
             width:100%;
-            margin-bottom: 25px;
         }
         &:hover{
             background-color: @red_dark;

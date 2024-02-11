@@ -3,7 +3,14 @@
   width: 100%;
   max-width: 1414px;
   padding: 0 40px;
-  margin-bottom:150px;
+  margin-bottom:120px;
+  @media @bw1020{
+    padding:0 30px;
+    margin-bottom:70px;
+  }
+  @media @bw768{
+    padding:0 20px;
+  }
 }
 .reserve {
   display: grid;
@@ -122,6 +129,10 @@
     flex-direction: column;
     justify-content: right;
     text-align: right;
+    @media @bw768{
+      justify-content: left;
+      text-align: left;
+    }
   }
 }
 .legend{
@@ -129,6 +140,9 @@
     display: flex;
     justify-content: right;
     margin-bottom: 15px;
+    @media @bw768{
+      justify-content: left;
+    }
     &-el{
       font-size: 14px;
     }
@@ -163,6 +177,9 @@
     &-red{
       border: 1px solid @red_dark;
       position: relative;
+      @media @bw768{
+        margin-left: 12px;
+      }
       &::after{
         content: "";
         width:23px;
