@@ -15,7 +15,7 @@
         @media @bw1660{
             margin-top: 87px;
         }
-        @media @bw1020{
+        @media @bw1340{
             flex-direction: column;
         }
         @media @bw768{
@@ -26,7 +26,7 @@
             flex-direction: column;
             align-items: end;
             justify-content: space-between;
-            @media @bw1020{
+            @media @bw1340{
                 flex-direction: row;
             }
             @media @bw768{
@@ -78,7 +78,7 @@
         }
     }
     &__text3{
-        width: 344px;
+        max-width: 344px;
         margin-top: 155px;
         @media @bw1660{
             margin-top: 135px;
@@ -90,6 +90,7 @@
         }
         @media @bw1020{
             margin-top: 60px;
+            max-width: 280px;
             width: 100%;
         }
     }
@@ -164,22 +165,44 @@
             height: 25vw;
         }
     }
-    &__btn{
+    &__link{
         float:right;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
         margin-top:88px;
-        width:345px;
-        height:62px;
+        max-width: 353px;
         @media @bw1020{
-            width:262px;
-            height:40px;
+            max-width: 262px;
         }
         @media @bw768{
             margin-top: 30px;
-            width:100%;
         }
         &:hover{
             color:@red_dark;
             cursor:pointer;
+        }
+    }
+    &__btn{
+        height:60px;
+        width: 91px;
+        @media @bw1020{
+            height:40px;
+            width:67px;
+        }
+        &:hover{
+            color:@red_dark;
+            cursor:pointer;
+        }
+        &-text{
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.362;
+            color:inherit;
+            @media @bw768{
+                font-size: 14px;
+            }
         }
     }
     .container();
