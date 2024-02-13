@@ -11,14 +11,29 @@
         left: 0;
     }
     &::before{
-        border-bottom: 2vw solid @white;
-        border-right: 40vw solid transparent;
-        top:-1.9vw;
+        border-top: 30px solid transparent;
+        border-left: 40vw solid @white;
+        border-right: 60vw solid @white;
+        top: -29px;
     }
     &::after{
-        border-top: 2vw solid @white;
-        border-right: 63vw solid transparent;
-        bottom:-1.9vw;
+        border-bottom: 30px solid transparent;
+        border-left: 60vw solid @white;
+        border-right: 40vw solid @white;
+        bottom:-29px;
+    }
+    &-container{
+        .container();
+        margin:0;
+        @media @bw1660{
+            margin:0;
+        }
+        @media @bw1340{
+            margin:0;
+        }
+        @media @bw768{
+            margin:0;
+        }
     }
 }
 .events__events{
