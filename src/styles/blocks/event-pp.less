@@ -57,6 +57,7 @@
     height: 60px;
     border-radius: 50%;
     border:none;
+    pointer-events: none;
     @media @bw768{
       width: 36px;
       height: 36px;
@@ -179,5 +180,13 @@
     @media @bw768{
       font-size: 16px;
     }
+  }
+}
+.show-event-popup {
+  body {
+    overflow: hidden;
+  }
+  #js-eventPP {
+    display: flex;
   }
 }

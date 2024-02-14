@@ -160,6 +160,7 @@
             border-radius: 2px;
             background-color: @black;
             transform-origin: 50% 50%;
+            transition: transform 0.4s, box-shadow 0.4s;
         }
         &::before {
             top: 13px;
@@ -167,6 +168,9 @@
         }
         &::after {
             top: 25px;
+        }
+        &:hover{
+            cursor: pointer;
         }
     }
     &__nav-user {
@@ -182,10 +186,40 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
+        text-decoration: none;
+        &:hover{
+            color:@red_dark;
+        }
     }
     &__nav-logout {
         width: 24px;
         height: 24px;
         font-size: 0;
+        &:hover{
+            color:@red_dark;
+        }
     }
 }
+.show-nav {
+    body {
+      @media @bw1020 {
+        overflow: hidden;
+      }
+    }
+    .page-header__nav {
+        @media @bw1020 {
+          transform: translateX(0);
+        }
+    }
+    .page-header__nav-toggle {
+        &::before {
+          transform: translate(0px, 6px) rotate(45deg);
+          box-shadow: none;
+          transition: transform 0.4s, box-shadow 0.4s;
+        }
+        &::after {
+          transform: translate(0px, -6px) rotate(-45deg);
+          transition: transform 0.4s, box-shadow 0.4s;
+        }
+      }
+  }

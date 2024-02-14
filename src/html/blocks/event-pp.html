@@ -1,7 +1,7 @@
-<div class="pp" id="eventPP">
+<div class="pp" id="js-eventPP">
     <div class="pp__wrapper">
         <div class="pp__sticky-close">
-            <button class="pp__x-btn x-btn">
+            <button class="pp__x-btn x-btn js-ppCloseBtn">
                 <svg class="pp__x-btn-icon">
                     <use xlink:href="assets/icons/symbols.svg#x"></use>
                 </svg>
@@ -52,7 +52,6 @@
                             </div>
                         </div>
                 </div>
-
                 <span class="field__title">Контактные данные:</span>
                 <div class="stroke">
                     <div class="field">
@@ -72,12 +71,10 @@
                         <input class="field__input" type="email" placeholder="Email" name="email" required>
                     </div>
                 </div>
-
                 <span class="field__title">Есть пожелания? Напишите нам:</span>
                 <label class="stroke">
                     <textarea class="field__textarea" name="wishes"></textarea>
                 </label>
-
                 <label class="check">
                     <input type="checkbox" name="agree" class="check__input" required checked/>
                     <span class="check__mark"></span>
@@ -85,12 +82,10 @@
                         Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных
                     </span>
                 </label>
-
                 <div class="pp__btns">
                     <button class="pp__btns-save btn">Отправить</button>
-                    <button class="pp__btns-close btn">Закрыть</button>
+                    <button class="pp__btns-close btn js-ppCloseBtn">Закрыть</button>
                 </div>
-
             </form>
         </div>
     </div>
