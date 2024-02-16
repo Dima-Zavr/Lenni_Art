@@ -100,3 +100,20 @@
     .swiper-pagination-bullet {
     margin: 2px 3px;
   }
+
+
+  .swiper{
+    &-footer{
+      .arrow{
+        background-color: transparent;
+        border: none;
+        &:hover{
+          color: @red_dark;
+          cursor: pointer;
+        }
+      }
+    }
+    &-arrow-prev{
+      transform: rotate(180deg);
+    }
+  }
