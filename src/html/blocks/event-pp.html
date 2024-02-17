@@ -38,18 +38,19 @@
                     </div>
                         <div class="field">
                             <span class="field__title">Планируемое количество посетителей:</span>
-                            <select class="field__select" name="amount">
+                            <select class="field__select js-selectric" name="amount">
                                 <option value="20">до 20 человек</option>
                                 <option value="100">от 20 до 100 человек</option>
                                 <option value="500">от 100 до 500 человек</option>
                                 <option value="1000">более 500 человек</option>
                             </select>
                             <span class="field__title">Дата проведения:</span>
-                            <div style="display: flex;">
-                                <input class="field__input field__input-date" type="text" maxlength="2" minlength="2" placeholder="ДД" name="day" required>
-                                <input class="field__input field__input-date" type="text" maxlength="2" minlength="2" placeholder="ММ" name="month" required>
-                                <input class="field__input field__input-year" type="text" maxlength="4" minlength="4" placeholder="ГГГГ" name="year" required>
+                            <div style="display: flex;" class="js-dateField">
+                                <input class="field__input field__input-date js-dateDay" type="text" placeholder="ДД" readonly>
+                                <input class="field__input field__input-date js-dateMonth" type="text" placeholder="ММ" readonly>
+                                <input class="field__input field__input-year js-dateYear" type="text" placeholder="ГГГГ"  readonly>
                             </div>
+                            <input class="field__date-picker js-dateInput" type="text" name="date" readonly required>
                         </div>
                 </div>
                 <span class="field__title">Контактные данные:</span>
@@ -64,7 +65,7 @@
                     </div>
                     <div class="field">
                         <span class="field__label">Телефон*</span>
-                        <input class="field__input" type="tel" placeholder="+7 (___) ___ __ __" name="telephone" required>
+                        <input class="field__input js-mobileMask" type="tel" placeholder="Телефон" name="telephone" required>
                     </div>
                     <div class="field">
                         <span class="field__label">Email*</span>
