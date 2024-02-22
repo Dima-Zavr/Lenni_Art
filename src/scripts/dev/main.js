@@ -299,34 +299,66 @@
     mobileMask.mask('+7 (000) 000 00 00', {placeholder: "+7 (____) ____ ___ ___"})
   }
 
-  const dateField = $(".js-dateField")
+  const dateField = $(".js-dateField");
 
-  if(dateField.length){
-    const pickerInit = function(pick){
+  if (dateField.length) {
+    const pickerInit = function (pick) {
       const dateInput = pick.find(".js-dateInput");
       const dateDay = pick.find(".js-dateDay");
       const dateMonth = pick.find(".js-dateMonth");
       const dateYear = pick.find(".js-dateYear");
-
       const dateConfig = {
         autoClose: true,
         minDate: new Date(),
         navTitles: {
-          days: "MMMM <i>yyyy</i>",
+          days: "MMMM <i>yyyy</i>"
         },
-        onSelect: function ({date}) {
-          dateDay.val(date ? ("0" + dat.getDate()).slice(-2) : "");
+        onSelect: function ({ date }) {
+          dateDay.val(date ? ("0" + date.getDate()).slice(-2) : "");
           dateMonth.val(date ? ("0" + (date.getMonth() + 1)).slice(-2) : "");
           dateYear.val(date ? date.getFullYear() : "");
-        },
+        }
       };
-
       new AirDatepicker(dateInput[0], dateConfig);
     };
-
-    $.each(dateField, function() {
+    $.each(dateField, function (i) {
       pickerInit($(this));
-    })
+    });
+  }
+
+
+  const eventForm = $('#js-eventForm');
+  if (eventForm.length) {
+    eventForm.validate({
+      errorElement: "span"
+    });
+  }
+
+  const subscribeForm = $("#js-subscribeForm");
+  if (subscribeForm.length) {
+    const subscribeAction = subscribeForm.attr("action");
+    const subscribeEmail = subscribeForm.find("#js-subscribeEmail");
+    subscribeForm.validate({
+      errorElement: "span",
+      submitHandler: function (form, event) {
+        event.preventDefault();
+        $.ajax({
+          url: subscribeAction,
+          method: "POST",
+          data: {
+            email: subscribeEmail.val()
+          },
+          success: function () {
+            subscribeEmail.val("");
+            subscribeEmail.blur();
+            alert("Вы успешно подписались на рассылку новостей");
+          },
+          error: function () {
+            alert("Что-то пошло не так, попробуйте еще раз");
+          }
+        });
+      }
+    });
   }
 
 })();

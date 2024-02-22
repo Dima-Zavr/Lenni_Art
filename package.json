@@ -32,6 +32,8 @@
     },
     "dependencies": {
         "@googlemaps/js-api-loader": "^1.16.3",
-        "jquery": "^3.7.1"
+        "air-datepicker": "^3.4.0",
+        "jquery": "^3.7.1",
+        "jquery-validation": "^1.20.0"
     }
 }
