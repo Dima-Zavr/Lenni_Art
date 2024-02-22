@@ -84,6 +84,7 @@
     margin: -40px 0 70px -27px;
     padding: 10px 85px;
     max-width: 595px;
+    width: 100%;
     min-height: 80px;
     background-color: @black;
     text-transform: uppercase;
@@ -158,6 +159,9 @@
     flex-direction: column;
   }
 }
+.form__field{
+  margin-top: 30px;
+}
 .field{
   width: calc(50% - 30px);
   @media @bw1340{
@@ -165,9 +169,6 @@
   }
   @media @bw768{
     width:100%;
-  }
-  &__select{
-    margin-bottom: 30px;
   }
   &__textarea{
     @media @bw768{
@@ -188,7 +189,6 @@
     display: flex;
   }
 }
-
 .field{
   &__date {
     position: relative;
@@ -226,6 +226,7 @@
     &--year {
       flex-grow: 1;
       margin-right: 0;
+      max-width: 110px;
     }
   }
   &__date-picker {
@@ -238,10 +239,5 @@
     border-radius: 5px;
     opacity: 0;
     cursor: pointer; 
-  }
-  label.error,
-  span.error {
-    display: block;
-    margin: 5px 0 0;
   }
 }

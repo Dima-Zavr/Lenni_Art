@@ -48,12 +48,12 @@
       grabCursor: true,
       pagination: {
         el: ".swiper-pagination",
-        clickable: true,
+        clickable: true
       },
       navigation: {
         nextEl: ".swiper-arrow-next",
         prevEl: ".swiper-arrow-prev",
-        disabledClass: "arrow--disabled",
+        disabledClass: "arrow--disabled"
       }
     });
   });

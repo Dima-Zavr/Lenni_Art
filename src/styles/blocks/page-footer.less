@@ -93,31 +93,42 @@
                 }
             }
             &__inputbtn{
+                position:relative;
                 display: flex;
+                flex-direction: column;
+                width: 410px;
                 margin-bottom: 15px;
-                @media @bw600{
-                    position:relative;
+                @media @bw1020{
+                    width: 375px;
+                }
+                @media @bw650{
                     top:0;
                     left: -20px;
-                    width: 100%;
+                    width: 100vw;
                 }
             }
             &__input{
                 padding: 15px 28px;
+                height: 16px;
                 border:none;
                 @media @bw1660{
                     width: 233px;
                 }
-                @media @bw600{
+                @media @bw650{
                     padding: 15px 20px;
+                    width: 100%;
+                    
                 }
                 &:focus{
                     outline: none;
                 }
             }
             &__btn{
+                position: absolute;
+                right:0;
                 display: inline-flex;
                 padding: 15px 23px;
+                height:46px;
                 justify-content: center;
                 align-items: center;
                 background-color: @black;
@@ -126,8 +137,9 @@
                 font-size: 14px;
                 font-weight: 400;
                 border:none;
-                @media @bw600{
+                @media @bw650{
                     padding: 15px 20px;
+                    
                 }
                 &:hover{
                     background-color: @red_dark;
