@@ -5,7 +5,7 @@ ___
 Основной стек технологий:
 * Обработка задач (сборщик проекта) - [Gulp](https://gulpjs.com/) + [Del](https://www.npmjs.com/package/del)
 * Форматирование кода - [Autoprefixer](https://www.npmjs.com/package/autoprefixer)
-* Стилизация - [PostCSS](https://www.npmjs.com/package/postcss)
+* Стилизация - [PostCSS](https://www.npmjs.com/package/postcss) + [Less](https://lesscss.org/)
 * Обработка и валидация форм - [JQuery Validation](https://jqueryvalidation.org/)
 * Вспомогательные функции - [JQuery](https://jquery.com/)
 * Окно выбора даты - [Air DatePicker](https://www.npmjs.com/package/air-datepicker)
